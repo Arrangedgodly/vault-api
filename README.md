@@ -4,8 +4,8 @@
 
 ## Api Calls List:
 * GET
-  - Requires no body to retreive all the stores counts, fetch at '/'
-  - Requires a "store" variable in the body, fetch at '/:store'
+  - To retreive all the stores counts requires no body, fetch at '/'
+  - To retreive a specific store's counts only requires a "store" variable in the body, fetch at '/:store'
 * POST
   - Requires "store" and "count" variables in the body, fetch at '/'
 * PATCH
