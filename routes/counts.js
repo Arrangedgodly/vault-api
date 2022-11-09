@@ -13,8 +13,8 @@ router.get('/', getCounts);
 
 router.get('/:store', getStoreCounts);
 
-router.delete('/:_id', deleteCount);
+router.delete('/:id', deleteCount);
 
-router.patch('/:_id', patchCount);
+router.patch('/:id', patchCount);
 
 module.exports = router;

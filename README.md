@@ -9,6 +9,13 @@
 * POST
   - Requires "store" and "count" variables in the body, fetch at '/'
 * PATCH
-  - Requires "_id" and "count" variables in the body, fetch at '/:_id'
+  - Requires "_id" and "count" variables in the body, fetch at '/:id'
 * DELETE
-  - Requires "_id" variable in the body, fetch at '/:_id'
+  - Requires "_id" variable in the body, fetch at '/:id'
+
+## Technologies Used
+* Node.js
+* nodemon
+* mongodb / mongoose
+* Express.js
+* ESLint
