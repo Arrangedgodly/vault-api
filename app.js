@@ -6,7 +6,9 @@ const helmet = require('helmet');
 const countsRouter = require('./routes/counts');
 
 const app = express();
-const { PORT = 3001 } = process.env;
+const { PORT = 3000, DATABASE = 'mongodb://localhost:27017/vault_db' } = process.env;
+
+mongoose.connect(DATABASE);
 
 app.listen(PORT, () => {
   console.log(`App listening at Port ${PORT}`);
