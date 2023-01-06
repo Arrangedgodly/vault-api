@@ -14,8 +14,6 @@ app.listen(PORT, () => {
   console.log(`App listening at Port ${PORT}`);
 });
 
-mongoose.connect('mongodb://localhost:27017/vault_db');
-
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());

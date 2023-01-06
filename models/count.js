@@ -23,7 +23,7 @@ const valueSchema = new mongoose.Schema({
 const countSchema = new mongoose.Schema({
   date: {
     type: Date,
-    default: Date.now(),
+    default: () => {return Date.now()},
   },
   store: {
     type: String,
