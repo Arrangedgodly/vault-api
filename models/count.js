@@ -35,7 +35,8 @@ const countSchema = new mongoose.Schema({
       'Nederlands',
       'Sheridan',
       'Littleton',
-      'GotG',
+      'Rockrimmon',
+      'Broadmoor'
     ],
   },
   count: [valueSchema],
