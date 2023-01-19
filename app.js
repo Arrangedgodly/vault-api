@@ -4,9 +4,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const countsRouter = require('./routes/counts');
+const { errors } = require('celebrate');
 
 const app = express();
-const { PORT = 3000, DATABASE = 'mongodb://localhost:27017/vault_db' } = process.env;
+const { PORT = 3000, DATABASE = 'mongodb://0.0.0.0:27017/vault_db' } = process.env;
 
 mongoose.connect(DATABASE);
 
@@ -20,3 +21,5 @@ app.use(helmet());
 app.use(cors());
 
 app.use('/', countsRouter);
+
+app.use(errors());
